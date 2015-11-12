@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">Li</string>
+    <string name="btn_login">Login</string>
+    <string name="tv_user">User</string>
+    <string name="login">登录</string>
+    <string name="register_txt1">还没有账号？</string>
+    <string name="register_txt2">立即注册 ></string>
+    <string name="iv_logo">university_logo</string>
+    <string name="et_username_hint">请输入用户名&#8230;</string>
+    <string name="et_password_hint">请输入密码&#8230;</string>
+
+</resources>

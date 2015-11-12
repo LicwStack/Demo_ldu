@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@android:id/tabs"
+            android:background="@android:color/white"
+            android:layout_alignParentTop="true" >
+        </FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible" >
+        </TabWidget>
+
+        <RadioGroup
+            android:id="@+id/tab_radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@android:id/tabcontent"
+            android:background="@drawable/home_buttom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio_button_news"
+                style="@style/style_radio_button"
+                android:checked="true"
+                android:drawableTop="@drawable/radio_button_comment" 
+                android:text="新闻"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_blog"
+                style="@style/style_radio_button"
+                android:drawableTop="@drawable/radio_button_home" 
+                android:text="博客"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_search"
+                style="@style/style_radio_button"
+                android:drawableTop="@drawable/radio_button_search" 
+                android:text="搜索"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_person"
+                style="@style/style_radio_button"
+                android:drawableTop="@drawable/radio_button_person" 
+                android:text="设置"/>
+
+        </RadioGroup>
+    </RelativeLayout>
+
+</TabHost>
